@@ -19,3 +19,148 @@
         </p-galleria>
 </section>
 
+<!--SECCION DIVIDIDA IMAGEN Y TEXTO(DESCRIPCION DEL E COMMERCE)-->
+<section>
+    <div class="relative min-h-160 lg:min-h-0 bg-surface-0 dark:bg-surface-900 flex lg:flex-row flex-col">
+            <div class="flex lg:flex lg:flex-row flex-col justify-center md:justify-normal h-full flex-1">
+                <div class="relative flex-1 z-20 flex items-center justify-center">
+                    <div class="flex items-center justify-center h-full">
+                        <div class="w-full max-w-2xl px-6 py-12 lg:p-12 xl:p-16 text-center lg:text-left">
+                            <h1 class="text-4xl xl:text-5xl font-bold text-surface-0 lg:text-surface-900 dark:text-surface-0 mb-6 leading-tight!">
+                                <span class="block">Create the screens your</span>
+                                <span class="block text-primary">visitors deserve to see</span>
+                            </h1>
+
+                            <p class="text-surface-0/90 lg:text-surface-700 dark:text-surface-200 text-xl leading-normal mb-8 max-w-xl lg:max-w-none">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+
+                            <div class="flex items-center gap-4 justify-center lg:justify-start">
+                                <button pButton type="button">
+                                    <span pButtonLabel>Learn More</span>
+                                </button>
+                                <button pButton type="button" outlined>
+                                    <span pButtonLabel>Live Demo</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="absolute lg:relative inset-0 lg:inset-auto flex-1">
+                    <div class="absolute lg:hidden inset-0 bg-surface-900/60 dark:bg-surface-900/80 z-10"></div>
+                    <img
+                        src="https://fqjltiegiezfetthbags.supabase.co/storage/v1/render/image/public/block.images/blocks/hero/hero-1.png"
+                        alt="hero-1"
+                        class="h-full w-full object-cover xl:[clip-path:polygon(12%_0,100%_0%,100%_100%,0_100%)]"
+                    />
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<!--SECCION ANIMADA E INFORMATIVA DEL E COMMERCE-->
+<section class="bg-black py-12">
+    <div class="card flex flex-col items-center overflow-hidden">
+    <div class="flex flex-col items-center gap-2">
+        <span class="text-xl font-medium"></span>
+        <span class="animate-bounce h-8 w-8 bg-primary text-primary-contrast rounded-full inline-flex items-center justify-center">
+            <i class="pi pi-arrow-down"></i>
+        </span>
+    </div>
+    <div class="h-[20rem]"></div>
+    <div class="flex flex-wrap justify-center gap-8">
+        <div
+            pAnimateOnScroll
+            enterClass="animate-enter fade-in-10 slide-in-from-l-8 animate-duration-1000"
+            leaveClass="animate-leave fade-out-0"
+            class="flex flex-col border border-surface shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
+        >
+            <div class="rounded-full bg-primary text-primary-contrast w-12 h-12 flex items-center justify-center">
+                <i class="pi pi-truck !text-2xl"></i>
+            </div>
+            <span class="text-2xl font-bold">Envios Gratis</span>
+            <span class="text-muted-color text-center">Pide tus prendas desde cualquier parte de Cienaga, Santa marta y Barranquilla.</span>
+        </div>
+        <div
+            pAnimateOnScroll
+            enterClass="animate-enter fade-in-10 animate-duration-1000"
+            leaveClass="animate-leave fade-out-0"
+            class="flex flex-col border border-surface shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
+        >
+            <div class="rounded-full bg-primary text-primary-contrast w-12 h-12 flex items-center justify-center">
+                <i class="pi pi-verified !text-2xl"></i>
+            </div>
+            <span class="text-2xl font-bold">100% Oro Certificado</span>
+            <span class="text-muted-color text-center">En Ceyrus nuestras prendas poseen solo materiales preciosos con certificacion.</span>
+        </div>
+        <div
+            pAnimateOnScroll
+            enterClass="animate-enter fade-in-10 slide-in-from-r-8 animate-duration-1000"
+            leaveClass="animate-leave fade-out-0"
+            class="flex flex-col border border-surface shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
+        >
+            <div class="rounded-full bg-primary text-primary-contrast w-12 h-12 flex items-center justify-center">
+                <i class="pi pi-dollar !text-2xl"></i>
+            </div>
+            <span class="text-2xl font-bold">Pagos Seguros</span>
+            <span class="text-muted-color text-center">Transacciones protegidas en todo momento, nuestras reseñas nos respaldan dia a dia.</span>
+        </div>
+    </div>
+    
+    <div class="h-[20rem]"></div>
+    <div class="flex flex-wrap justify-center gap-8">
+        <div
+            pAnimateOnScroll
+            enterClass="animate-enter fade-in-10 spin-in-45 slide-in-from-t-12 animate-duration-1000"
+            class="flex flex-col bg-primary text-primary-contrast border-primary shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
+        >
+            <span class="bg-white/20 text-xl font-medium rounded-xl px-4 py-2">850K</span>
+            <span class="text-2xl font-bold">Customers</span>
+            <span class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+        <div
+            pAnimateOnScroll="{ enterClass: 'animate-enter fade-in-10 zoom-in-50 slide-in-from-t-20 animate-duration-1000' }"
+            class="flex flex-col bg-primary text-primary-contrast border-primary shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
+        >
+            <span class="bg-white/20 text-xl font-medium rounded-xl px-4 py-2">$1.5M</span>
+            <span class="text-2xl font-bold">Revenue</span>
+            <span class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+        <div
+            pAnimateOnScroll
+            enterClass="animate-enter fade-in-10 spin-in-[-45deg] slide-in-from-t-16 animate-duration-1000"
+            class="flex flex-col bg-primary text-primary-contrast border-primary shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
+        >
+            <span class="bg-white/20 text-xl font-medium rounded-xl px-4 py-2">140K</span>
+            <span class="text-2xl font-bold">Sales</span>
+            <span class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+    </div>
+    <div class="h-[20rem]"></div>
+    <div class="flex flex-wrap justify-center gap-8">
+         <div
+            pAnimateOnScroll
+            enterClass="animate-enter fade-in-10 slide-in-from-t-20 animate-duration-1000"
+            leaveClass="animate-leave fade-out-0"
+            class="flex flex-col border border-primary-200 shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4"
+        >
+            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" size="xlarge" />
+            <span class="text-2xl font-medium">Jenna Thompson</span>
+            <span class="text-muted-color text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+
+        <div pAnimateOnScroll enterClass="animate-enter fade-in-10 slide-in-from-b-20 animate-duration-1000" class="flex flex-col border border-primary-200 shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4">
+            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/asiyajavayant.png" shape="circle" size="xlarge" />
+            <span class="text-2xl font-medium">Isabel Garcia</span>
+            <span class="text-muted-color text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+        <div pAnimateOnScroll enterClass="animate-enter fade-in-10 slide-in-from-t-20 animate-duration-1000" class="flex flex-col border border-primary-200 shadow-lg justify-center items-center max-w-80 rounded-2xl p-8 gap-4">
+            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png" shape="circle" size="xlarge" />
+            <span class="text-2xl font-medium">Xavier Mason</span>
+            <span class="text-muted-color text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+    </div>
+</div>
+</section>

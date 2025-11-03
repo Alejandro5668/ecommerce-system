@@ -1,6 +1,11 @@
 import { GalleriaModule } from 'primeng/galleria';
 import {Component, model, OnInit} from '@angular/core';
 import { PhotoService } from '../../services/photo-service';
+import { AnimateOnScroll } from 'primeng/animateonscroll';
+import { AvatarModule } from 'primeng/avatar';
+import { CommonModule } from '@angular/common';
+import { ButtonModule } from 'primeng/button';
+ 
 
 interface Image {
   itemImageSrc: string;
@@ -11,7 +16,7 @@ interface Image {
 
 @Component({
   selector: 'app-home',
-  imports: [GalleriaModule],
+  imports: [GalleriaModule, AnimateOnScroll, AvatarModule, CommonModule, ButtonModule],
   templateUrl: './home.html',
   styleUrl: './home.css',
   providers: [PhotoService]
