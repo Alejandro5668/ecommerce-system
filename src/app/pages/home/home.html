@@ -1,0 +1,21 @@
+<!----SECCION DEL CARRUSEL DE IMAGENES-->
+<section class="w-full flex items-center justify-center bg-black">
+        <p-galleria 
+            [value]="images()" 
+            [showItemNavigators]="true" 
+            [showThumbnails]="false" 
+            [showIndicators]="true" 
+            [showItemNavigatorsOnHover]="true" 
+            [circular]="true" 
+            [responsiveOptions]="responsiveOptions" 
+            [containerStyle]="{ 'width': '100vw', 'max-width': '100vw' }" 
+            [numVisible]="5">
+            <ng-template #item let-item>
+                <img 
+                    [src]="item.itemImageSrc" 
+                    class="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover block" 
+                    alt="Gallery image" />
+            </ng-template>
+        </p-galleria>
+</section>
+
