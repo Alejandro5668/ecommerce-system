@@ -26,8 +26,37 @@
     }
 }
 
-::ng-deep .p-galleria {
-  border-bottom: 1px solid black;
+/*QUITAR BORDES DE LA GALERIA DE IMAGENES*/
+:host ::ng-deep .p-galleria,
+:host ::ng-deep .p-galleria-content,
+:host ::ng-deep .p-galleria-item-wrapper,
+:host ::ng-deep .p-galleria-item-container,
+:host ::ng-deep .p-galleria-item {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
+
+:host ::ng-deep .p-galleria-item {
+  border-radius: 0 !important;
+}
+
+/* Quitar pseudo-bordes */
+:host ::ng-deep .p-galleria:before,
+:host ::ng-deep .p-galleria:after {
+  display: none !important;
+}
+
+/* Evita el “tap highlight” en móviles */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+
 
 
