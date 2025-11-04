@@ -26,3 +26,8 @@
     }
 }
 
+::ng-deep .p-galleria {
+  border-bottom: 1px solid black;
+}
+
+
